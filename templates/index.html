@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <title>Turbo Pascale Agency e.U.</title>
+  <style>
+    body {
+      font-family: Georgia;
+      text-align: center;
+      margin-top: 15%;
+    }
+    body img {
+      border: 0;
+    }
+  </style>
+  <body>
+    <a href="mailto:office@turbo.agency">
+      <img src="/static/turbo-agency-logo.png" width="413" height="236">
+    </a>
+    <p>{{ phrase }}</p>
+  </body>
+  <script>
+    document.querySelector('img').onclick = function() {
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance('Welcome to Turbo Pascale Agency'));
+    }
+  </script>
+</html>
